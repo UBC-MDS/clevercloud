@@ -61,8 +61,14 @@ Ready to contribute? Here's how to set up `clevercloud` for local development.
 
 ## Pull Request Guidelines
 
-Before you submit a pull request, check that it meets these guidelines:
+If you choose to submit a pull request, please review the steps below:
+1. Clone the repository locally.
+2. Create a new branch in your desktop copy of this repository.
+3. Commit the change in that branch.
+4. Submit a pull request from that branch to the master branch of the master repository.
+5. If you receive feedback, make changes on your desktop and push to your branch on GitHub: the pull request will update automatically.
 
+Before you submit a pull request, check that it meets these guidelines:
 1. The pull request should include additional tests if appropriate.
 2. If the pull request adds functionality, the docs should be updated.
 3. The pull request should work for all currently supported operating systems and versions of Python.

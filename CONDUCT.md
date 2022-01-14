@@ -34,10 +34,10 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team. The project team will review and investigate all complaints, and will respond in a way that it deems appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
-
-Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
+Instances of abusive, harassing, or otherwise unacceptable behavior during a DSCI 524 group project event or in an online space outside of organised events, we ask that you report it to the Instructor(s). The current instructor(s) of DSCI 524 is(are) Tiffany Timbers. To report a DSCI 524 group project code of conduct violation that will not be seen by the instructor, the group meeting will be raised and depends on the discussion, reporting to the instructor(s).
 
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant homepage](http://contributor-covenant.org/version/1/4), version 1.4.
+
+Also adapted from the DSCI 100 Code of Conduct avaialble at https://github.com/UBC-DSCI/dsci-100-student/blob/master/CODE_OF_CONDUCT.md

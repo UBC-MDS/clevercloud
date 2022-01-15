@@ -1,9 +1,10 @@
 # clevercloud
 
-A package for creating clever word clouds
+Creating meaningful and visually appealing word clouds! 
 
-# Project Summary
-This package is developed to expand the Stopwords library to capture more English words in various formats including different tense of verbs and plural nouns to achieve better result in machine learning models. For example, the word 'will' is in the current Stopword library and CleverCloud would include other formats such as 'would'. 
+## Summary
+
+This package is developed to serve as the one-step solution to create meaningful and visually appealing word clouds. To create meaningful word clouds, data scientists typically takes multiple steps to clean the data, such as removing punctuation and digits, making the letters lower cases, conducting lemmatization and stemming. This package will help data scientists clean the data easily following the common practices and also allow to create more visually appealing word clouds in relevant shapes.  
 
 ## Functions
 
@@ -19,15 +20,16 @@ There are 4 functions in this package:
 
 ## Installation
 
-```bash
+``` bash
 $ pip install clevercloud
 ```
 
 ## Usage
 
-- TODO
+-   TODO
 
 ## Contributing
+
 Contributors of the project: Amelia Tang, Arushi Ahuja, Victor Francis, Adrianne Leung
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.

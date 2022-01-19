@@ -1,4 +1,3 @@
-
 def CleverLemStem(text):
     """
     A preprocessor to conduct lemmatinzation and stemming on the text.   
@@ -18,8 +17,11 @@ def CleverLemStem(text):
     >>> sample_text = "maximum crying feet"
     >>> CleverLemStem(sample_text)
     "maxim cry foot"
-    
     """
+    # import packages 
+    from nltk.stem import LancasterStemmer, WordNetLemmatizer
+    from nltk.tokenize import RegexpTokenizer
+    
     tokenizer = RegexpTokenizer(r'\w+')
     tokenized_text = tokenizer.tokenize(text)
     
@@ -32,5 +34,3 @@ def CleverLemStem(text):
     clean_text = ' '.join([stemmer.stem(i) for i in tokenized_lem_text]) 
     
     return clean_text
-    
-

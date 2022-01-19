@@ -1,21 +1,36 @@
+
 def CleverLemStem(text):
     """
     A preprocessor to conduct lemmatinzation and stemming on the text.   
     
     Parameters
     ----------
-    text : numpy.array
-        Input an array of text / strings 
+    text : str
+        Input a strng 
     
     Returns
     -------
-    numpy.array
-        The lemmatized and stemmed text 
+    str
+        The lemmatized and stemmed string 
     
     Examples
     --------
-    >>> sample_text = numpy.array('went to Paris it was beautiful')
+    >>> sample_text = "maximum crying feet"
     >>> CleverLemStem(sample_text)
-    'go to Paris it is beauty'   
+    "maxim cry foot"
     
     """
+    tokenizer = RegexpTokenizer(r'\w+')
+    tokenized_text = tokenizer.tokenize(text)
+    
+    lem = WordNetLemmatizer()
+    lem_text = ' '.join([lem.lemmatize(i) for i in tokenized_text])
+    
+    tokenized_lem_text = tokenizer.tokenize(lem_text)
+    
+    stemmer = LancasterStemmer()
+    clean_text = ' '.join([stemmer.stem(i) for i in tokenized_lem_text]) 
+    
+    return clean_text
+    
+

@@ -23,12 +23,26 @@ def CleverStopwords(words):
     """
     import nltk
     from nltk.corpus import stopwords
+    
+    # Download stopwords from NLTK library
     nltk.download('stopwords')
+    
+    # Test input variable type
     if not isinstance(words, set):
         raise TypeError("Input variable should be a set.")
 
+    # Test data type of values of input variable
+    for item in words:
+        if not isinstance(item, str):
+            raise TypeError("Values of input variable should be a string.")
+
     # NLTK English stopwords
     stopwords = set(stopwords.words("english"))
+
+    try:
+        nltk.download("stopwords")
+    except:
+        raise ImportError("Stopwords are not downloaded from NLTK.")
 
     new_stopwords = words
     

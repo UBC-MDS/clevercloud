@@ -5,7 +5,7 @@ from clevercloud.CleverStopwords import CleverStopwords
 import pytest
 
 def test_CleverStopwords():
-    """Test length of new stopwords"""
+    """Test length and output of new stopwords"""
     import nltk
     from nltk.corpus import stopwords
     nltk.download('stopwords')
@@ -16,9 +16,18 @@ def test_CleverStopwords():
     actual = len({"would", "aaa"}) + len(stopwords)
     assert actual == expected, "Duplicate words are added incorrectly."
     assert len(CleverStopwords({"the", "aaa"})) == len(stopwords) + 1, "Duplicate words are added incorrectly."
+    assert isinstance(CleverStopwords({"the", "aaa"}), set), "Output is not a set."
 
 def test_CleverStopwords_error():
+    
     """Check TypeError raised when input is not a set"""
     with pytest.raises(TypeError):
         words = ["would", "aaa"]
         CleverStopwords(words)
+
+    """Check TypeError raised when input value in the set is not a string"""
+    with pytest.raises(TypeError):
+        words = {12, "aaa"}
+        CleverStopwords(words)
+
+    

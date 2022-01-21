@@ -23,6 +23,10 @@ def CleverClean(text):
     import string
     import pandas as pd
     
+    #Checking if correct inputs are given 
+    if not pd.api.types.is_string_dtype(text):
+        raise TypeError("Input 'text' should be a panda series containing only strings")
+    
     #combining strings from the panda series to one large string 
     all_strings=''
     for i in text:

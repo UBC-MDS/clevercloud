@@ -31,6 +31,7 @@ def CleverClean(text):
     all_strings=''
     for i in text:
         all_strings+=str(i)
+        all_strings+=" "
 
     #coverting strings to lower case
     text_low = all_strings.lower() 

@@ -4,8 +4,8 @@ def CleverClean(text):
     
     Parameters
     ----------
-    text : panda.series
-        Input a panda series of text / strings
+    text : pandas.series
+        Input a pandas series of text / strings
     
     Returns
     -------

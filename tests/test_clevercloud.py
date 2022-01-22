@@ -3,7 +3,7 @@ from clevercloud.CleverWordCloud import CleverWordCloud
 from pytest import raises
 
 def test_CleverWordCloud():
-  """test CleverLemStem function"""
+  """test CleverWordCloud function"""
   
   # Check error 
   with raises(TypeError) as e:

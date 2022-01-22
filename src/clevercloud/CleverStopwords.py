@@ -34,7 +34,7 @@ def CleverStopwords(words):
     # Test data type of values of input variable
     for item in words:
         if not isinstance(item, str):
-            raise TypeError("Values of input variable should be a string.")
+            raise TypeError("Each element of the input should be a string.")
 
     # NLTK English stopwords
     stopwords = set(stopwords.words("english"))

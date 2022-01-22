@@ -31,6 +31,6 @@ def CleverWordCloud(text, CleverStop, max)::
     if not isinstance(text, str):
         raise TypeError("Input variable should be a string.")
     
-    wordcloud = WordCloud(max_font_size=40, max_words=100).generate(text)
+    wordcloud = WordCloud(stopwords=CleverStop, max_words=max).generate(text)
     image = wordcloud.to_image()
     image.show()

@@ -1,4 +1,3 @@
-from clevercloud import clevercloud
 from clevercloud.CleverWordCloud import CleverWordCloud
 from pytest import raises
 

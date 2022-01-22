@@ -23,8 +23,10 @@ def CleverLemStem(text):
         raise TypeError("The input value should be a string.")
     
     # import packages 
+    import nltk
     from nltk.stem import LancasterStemmer, WordNetLemmatizer
     from nltk.tokenize import RegexpTokenizer
+    nltk.download('omw-1.4')
     
     # lemmatization 
     tokenizer = RegexpTokenizer(r'\w+')

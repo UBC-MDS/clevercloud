@@ -1,4 +1,4 @@
-def CleverWordCloud(text):
+def CleverWordCloud(text, CleverStop, max)::
     """
     This function generates a visually appealing word cloud with customized shape and stopwords.   
     

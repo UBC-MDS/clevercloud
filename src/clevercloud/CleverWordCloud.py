@@ -1,4 +1,4 @@
-def CleverWordCloud(text, stopwords=STOPWORDS, shape=CLOUD, max_words=100):
+def CleverWordCloud(text):
     """
     This function generates a visually appealing word cloud with customized shape and stopwords.   
     
@@ -25,4 +25,12 @@ def CleverWordCloud(text, stopwords=STOPWORDS, shape=CLOUD, max_words=100):
     --------
     >>> CleverWordCloud(sample_text, max_words=200) 
     
-    """"
+    """
+    from wordcloud import WordCloud
+    import nltk
+    if not isinstance(text, str):
+        raise TypeError("Input variable should be a string.")
+    
+    wordcloud = WordCloud(max_font_size=40, max_words=100).generate(text)
+    image = wordcloud.to_image()
+    image.show()

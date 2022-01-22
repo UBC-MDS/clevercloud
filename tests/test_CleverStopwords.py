@@ -3,10 +3,10 @@
 
 from clevercloud.CleverStopwords import CleverStopwords
 import pytest
+import nltk
 
 def test_CleverStopwords():
     """Test length and output of new stopwords"""
-    import nltk
     from nltk.corpus import stopwords
     nltk.download('stopwords')
     

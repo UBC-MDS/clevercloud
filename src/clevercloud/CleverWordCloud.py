@@ -1,6 +1,7 @@
 def CleverWordCloud(text, CleverStop, max_w):
+  
     """
-    This function generates a visually appealing word cloud with customized shape and stopwords.   
+    This function generates a word cloud with customized stopwords and max words included. 
     
     Parameters
     ----------
@@ -8,7 +9,7 @@ def CleverWordCloud(text, CleverStop, max_w):
         Input an array of text / strings 
     
     CleverStop: set 
-        Input an set of strings 
+        Input a set of strings 
 
     max_w: int 
         Input an integer to indicate the maximum number of words included in the word cloud  
@@ -16,11 +17,11 @@ def CleverWordCloud(text, CleverStop, max_w):
     Returns
     -------
     png image 
-        The output word cloud  
+        The output word cloud in the same directory where the function is called  
     
     Examples
     --------
-    >>> CleverWordCloud(text, {"are", "my", "is", 200) 
+    >>> CleverWordCloud(text, {"are", "my", "is"}, 200) 
     
     """
     from wordcloud import WordCloud

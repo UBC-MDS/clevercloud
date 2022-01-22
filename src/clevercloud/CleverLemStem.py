@@ -5,7 +5,7 @@ def CleverLemStem(text):
     Parameters
     ----------
     text : str
-        Input a strng 
+        Input a string
     
     Returns
     -------

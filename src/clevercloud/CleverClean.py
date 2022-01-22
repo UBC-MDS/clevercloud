@@ -4,26 +4,37 @@ def CleverClean(text):
     
     Parameters
     ----------
-    text : numpy.array
-        Input an array of text / strings 
+    text : pandas.series
+        Input a pandas series of text / strings
     
     Returns
     -------
-    numpy.array
-        The cleaned array of text 
+    str
+        A long string containing the cleaned of version of all text
     
     Examples
     --------
-    >>> sample_text = numpy.array('Apple is MY favorite!')
+    >>> sample_text = pandas.Series('Apple is MY favorite!')
     >>> CleverClean(sample_text)
-    'apple is my favorite'   
+    'apple is my favorite'
     
     """
-    #importing string package
-    import string 
+    #importing string and pandas package package
+    import string
+    import pandas as pd
+    
+    #Checking if correct inputs are given 
+    if not pd.api.types.is_string_dtype(text):
+        raise TypeError("Input 'text' should be a panda series containing only strings")
+    
+    #combining strings from the panda series to one large string 
+    all_strings=''
+    for i in text:
+        all_strings+=str(i)
+        all_strings+=" "
 
-    #coverting text to lower case
-    text_low = text.lower() 
+    #coverting strings to lower case
+    text_low = all_strings.lower() 
 
     #removing all the digits from text
     text_low_noDigits = ''.join([i for i in text_low if not i.isdigit()])
@@ -32,7 +43,7 @@ def CleverClean(text):
     prepro_text = "" #storing the complete preprocessed text in this variable 
     for i in text_low_noDigits:
         if i not in string.punctuation:
-            text_low_noDigits+=i
+            prepro_text+=i
     
     #returning the text 
     return prepro_text

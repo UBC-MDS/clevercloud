@@ -1,9 +1,10 @@
-def test_CleverClean():
-    #importing pandas and pytest
-    import pandas as pd 
-    from clevercloud.CleverClean import CleverClean
-    from pytest import raises
+#importing pandas and pytest
+import pandas as pd 
+from clevercloud.CleverClean import CleverClean
+from pytest import raises
     
+def test_CleverClean():
+
     #Error check
     with raises(TypeError) as e:
         CleverClean("This is not a panda series")

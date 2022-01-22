@@ -1,36 +1,44 @@
-def CleverWordCloud(text, CleverStop, max)::
+def CleverWordCloud(text, CleverStop, max_w):
+  
     """
-    This function generates a visually appealing word cloud with customized shape and stopwords.   
+    This function generates a word cloud with customized stopwords and max words included. 
     
     Parameters
     ----------
-    text : numpy.array
+    text : str
         Input an array of text / strings 
     
-    stopwords: set 
-        Input an set of strings 
-    
-    shape: string 
-        Input a string that represents the path to an image 
-    
-    max_words: int 
+    CleverStop: set 
+        Input a set of strings 
+
+    max_w: int 
         Input an integer to indicate the maximum number of words included in the word cloud  
     
     Returns
     -------
     png image 
-        The output word cloud  
+        The output word cloud in the same directory where the function is called  
     
     Examples
     --------
-    >>> CleverWordCloud(sample_text, max_words=200) 
+    >>> CleverWordCloud(text, {"are", "my", "is"}, 200) 
     
     """
     from wordcloud import WordCloud
     import nltk
     if not isinstance(text, str):
-        raise TypeError("Input variable should be a string.")
+        raise TypeError("Input text should be a string.")
+   
+    if not isinstance(CleverStop, set):
+        raise TypeError("Input CleverStop should be a set.")
+        
+    if not isinstance(max_w, int):
+        raise TypeError("Input max_w should be an integer.")
+        
+    for item in CleverStop:
+        if not isinstance(item, str):
+            raise TypeError("Each element of the CleverStop set should be a string.")
     
-    wordcloud = WordCloud(stopwords=CleverStop, max_words=max).generate(text)
+    wordcloud = WordCloud(stopwords=CleverStop, max_words=max_w).generate(text)
     image = wordcloud.to_image()
-    image.show()
+    image.show()  

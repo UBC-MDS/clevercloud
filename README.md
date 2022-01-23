@@ -41,7 +41,24 @@ $ pip install clevercloud
 
 ## Usage
 
--   TODO
+`clevercloud` can be used to perprocess text and create meaningful wordcloud with customized stopwords
+as follows:
+
+```python
+from clevercloud.CleverClean import CleverClean
+from clevercloud.CleverLemStem import CleverLemStem
+from clevercloud.CleverStopwords import CleverStopwords
+from clevercloud.CleverWordCloud import CleverWordCloud
+
+text = "is is a a apple orange maximum feet apple orange apple apple crying"
+more_stopwords = {"apple", "orange"}
+max_w = 5
+cleanText = CleverClean(text)
+cleanText = CleverLemStem(cleanText)
+my_stopwords = CleverStopwords(more_stopwords)
+WordCloud = CleverWordCloud(cleanText, my_stopwords, max_w)
+
+```
 
 ## Contributing
 

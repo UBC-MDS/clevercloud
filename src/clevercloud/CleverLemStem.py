@@ -27,6 +27,7 @@ def CleverLemStem(text):
     from nltk.stem import LancasterStemmer, WordNetLemmatizer
     from nltk.tokenize import RegexpTokenizer
     nltk.download('omw-1.4')
+    nltk.download('wordnet')
     
     # lemmatization 
     tokenizer = RegexpTokenizer(r'\w+')

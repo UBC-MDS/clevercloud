@@ -17,7 +17,7 @@ def CleverWordCloud(text, CleverStop, max_w):
     Returns
     -------
     png image 
-        The output word cloud in the same directory where the function is called  
+        Display the png image 
     
     Examples
     --------
@@ -42,3 +42,4 @@ def CleverWordCloud(text, CleverStop, max_w):
     wordcloud = WordCloud(stopwords=CleverStop, max_words=max_w).generate(text)
     image = wordcloud.to_image()
     image.show()  
+    return image

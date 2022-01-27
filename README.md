@@ -1,6 +1,6 @@
 # clevercloud
 
-Creating meaningful and visually appealing word clouds! 
+Creating meaningful word clouds! 
 
 ## Summary
 
@@ -41,7 +41,7 @@ $ pip install clevercloud
 
 ## Usage
 
-`clevercloud` can be used to perprocess text and create meaningful wordcloud with customized stopwords
+`clevercloud` can be used to preprocess text and create a meaningful word cloud with customized stopwords
 as follows:
 
 ```python
@@ -50,13 +50,14 @@ from clevercloud.CleverLemStem import CleverLemStem
 from clevercloud.CleverStopwords import CleverStopwords
 from clevercloud.CleverWordCloud import CleverWordCloud
 
-text = "is is a a apple orange maximum feet apple orange apple apple crying"
-more_stopwords = {"apple", "orange"}
-max_w = 5
-cleanText = CleverClean(text)
-cleanText = CleverLemStem(cleanText)
-my_stopwords = CleverStopwords(more_stopwords)
-WordCloud = CleverWordCloud(cleanText, my_stopwords, max_w)
+import pandas as pd
+text = ["is is a feet feet crying beautiful123", "maximum feet RUNNING!!", "BEAUTIFUL feet beautiful crying"]
+test_text = pd.Series(text) # input pandas series
+
+clean_text = CleverClean(test_text)
+final_text = CleverLemStem(clean_text)
+new_stopwords = CleverStopwords({"foot", "cry"})
+WordCloud = CleverWordCloud(final_text, new_stopwords, max_w=3)
 
 ```
 

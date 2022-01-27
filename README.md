@@ -69,7 +69,7 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## License
 
-`clevercloud` was created by Group_20. It is licensed under the terms of the MIT license.
+`clevercloud` was created by Amelia Tang, Arushi Ahuja, Victor Francis, Adrianne Leung. It is licensed under the terms of the MIT license.
 
 ## Credits
 

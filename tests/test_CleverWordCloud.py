@@ -6,4 +6,4 @@ def test_CleverWordCloud():
   
   # Check error 
   with raises(TypeError) as e:
-    CleverWordCloud("Input type(s) is(are) not correct")
+    CleverWordCloud(123, "hello", "a")

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "clevercloud"
-version = "0.1.0"
+version = "0.1.1"
 description = "A package for creating clever word clouds"
 authors = ["Group_20"]
 license = "MIT"

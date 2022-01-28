@@ -24,7 +24,7 @@ Packages that have similar functions:
 
 - [WordCloud](https://github.com/amueller/word_cloud): a word count generator that emphasis more frequently used words from an array of strings and represents them in the form of an image. 
 
-What we do different: 
+What we do differently: 
 
 - Our aim is to improve on the pre-processing of strings before creating a wordcloud in order to make it more user specific and efficient.
 

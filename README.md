@@ -16,7 +16,7 @@ There are 4 functions in this package:
 
 -   `CleverStopwords` A comprehensive list of English stopwords that allow adding more customized words.
 
--   `CleverWordCloud` As function to generate a visually appealing word cloud with customized shape and stopwords.
+-   `CleverWordCloud` As function to generate a meaningful word cloud that allows customized stopwords. 
 
 ## Fitting into the Python ecosystem
 

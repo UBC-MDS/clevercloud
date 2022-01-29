@@ -2,6 +2,9 @@
 
 Creating meaningful word clouds! 
 
+A package created to try a GitHub Actions workflow!
+[![ci-cd](https://github.com/UBC-MDS/clevercloud/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/clevercloud/actions/workflows/ci-cd.yml)
+
 ## Summary
 
 This package is developed to serve as the one-step solution to create meaningful and visually appealing word clouds. To create meaningful word clouds, data scientists typically takes multiple steps to clean the data, such as removing stopwords, removing punctuation and digits, making the letters lower cases, conducting lemmatization and stemming. This package will help data scientists clean the data easily following the common practices and also allow to a meaningful word cloud with customized stopwords. 

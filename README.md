@@ -2,8 +2,9 @@
 
 Creating meaningful word clouds! 
 
-A package created to try a GitHub Actions workflow!
 [![ci-cd](https://github.com/UBC-MDS/clevercloud/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/clevercloud/actions/workflows/ci-cd.yml)
+
+A package created to try a GitHub Actions workflow!
 
 ## Summary
 

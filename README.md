@@ -3,12 +3,8 @@
 Creating meaningful word clouds! 
 
 [![codecov](https://codecov.io/gh/UBC-MDS/clevercloud/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/clevercloud)
-
-A package created to try a GitHub Actions workflow! :)
-
 [![ci-cd](https://github.com/UBC-MDS/clevercloud/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/clevercloud/actions/workflows/ci-cd.yml)
-
-A package created to try a GitHub Actions workflow!
+[![Documentation Status](https://readthedocs.org/projects/clevercloud/badge/?version=latest)](https://clevercloud.readthedocs.io/en/latest/?badge=latest)
 
 ## Summary
 
